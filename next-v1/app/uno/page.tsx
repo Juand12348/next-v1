@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Props from "./props";
+import { useAppContext } from "../contexto/app-context";
 
 export default function Uno(){
+    const {nombre} = useAppContext();
 
 
     return(
@@ -9,7 +11,7 @@ export default function Uno(){
             <Link href='/'>Boton Home</Link>
             <Link href='/uno'>Boton Uno</Link>
             <Link href='/dos'>Boton Dos</Link>
-            <Props nombre="este es un props"/>
+            <Props nombre={nombre}/>
         </div>
     ); 
 

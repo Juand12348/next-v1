@@ -5,12 +5,3 @@ export default function Hijo({children}:{children: string}){
         </div>
     )
 }
-
-
-export function Hijo2({children}:{children: string}){
-    return (
-        <div>
-            este es mi hijo2 {children}
-        </div>
-    )
-}
